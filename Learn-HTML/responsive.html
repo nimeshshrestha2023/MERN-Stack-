@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            align-items: center;
+             justify-content:space-between;
+        }
+
+        header nav ul{
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1rem;
+        }
+
+        h1{
+            font-size: 1rem;
+        }
+
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+
+        /* Tablet Screen  */
+        @media (min-width:481px) and (max-width:768px){
+            .container{
+               grid-template-columns: repeat(2,1fr); 
+               
+               h1{
+                font-size: 2rem;
+               }
+
+            }
+        }
+
+        /* Large sized-tablet */
+
+        @media (min-width:769px) and (max-width:1201px)
+        {
+            .container{
+                grid-template-columns: repeat(3,1fr);
+            }
+            h1{
+                font-size: 3rem;
+            }
+        }
+
+        /* Desktop size screen */
+        @media (min-width:1201px)
+        {
+            .container{
+                grid-template-columns: repeat((4,1fr));
+            }
+            h1{
+                font-size: 1rem;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Logo</h1>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Main contents</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquid deserunt, repellat vel dolorem maiores, ipsam quam non perspiciatis suscipit ullam soluta doloremque?
+            </p>
+
+            <div class="container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+             
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

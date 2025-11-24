@@ -1,0 +1,190 @@
+:root{
+    font-size: 20px;
+}
+
+.title{
+    color: rgb(255,0,0); /*Red green blue; Range: 0-255*/
+    color: #001100; /*hex color: 0-9 ,A,B,C,D,E,F */
+    background-color: magenta;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline wavy;
+    text-transform: capitalize;
+
+}
+
+.description{
+    color: teal;
+    text-align: justify;
+    word-spacing:5px;
+    letter-spacing: 1px;
+    
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(41, 234, 41);
+    margin: 10px 20px 30px;
+    margin: 20px;
+    border: 10px dotted red;
+    border-top: 5px dotted red;
+
+    padding: 10px;
+
+    text-decoration: underline;
+
+
+}
+
+.shadow{
+    color: red;
+    text-shadow: 10px 10px 10px teal;
+}
+
+
+/* text properties: text-align: left , right, center, justify; text-decoration: none | underline wavy , dashed, dotted | line-through; text-transform: lowercase, uppercase, capatialize; word-spacing: 10px; text-spacing: 10px; text-shadow: -10px -10px 10px red;*/
+
+/* font properties: font-family: ; font-style: italic, oblique; font-weight: lighter, bold, normal*/
+
+/*box properties: margin, border, and padding, border-top: 10px solid, dashed , dotted red; */
+
+
+/* Display properties: */
+
+.container{
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+    margin: 1rem;
+    display: block;
+
+}
+
+.display-box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: inline-block;
+    margin: 1rem;
+}
+
+/*NOTE: for display properties: block , inline, inline-block and none are the specific 
+properties. Each properties have it's own working principle: 
+1. for display: block; it can have height and weight and covers full width
+2. for display: inline; it does not include height and width because inline-elments like span,img 
+does covers full width; to overcome this problem, inline-block properties is used;
+3. for display: inline-block: it includes height and width */
+
+
+
+/* FLEX PROPERTIES: */
+
+.section-flex{
+    display: flex;
+    flex-direction: row; /*row(default), column , row-reversed, column-reversed*/
+    align-items: center; /*row, column , center*/
+    justify-content: space-around; /*start, center, end, space-around, space-between, space-evenly*/
+
+    /*NOTE: for display: flex; we can use flex-direction and justify-contents*/
+}
+
+.item1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.item2{
+    height: 150px;
+    width: 150px;
+    background-color: crimson;
+}
+
+/* Design navigation using flex: */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+/* LIST PROPERTIES */
+
+.list{
+    list-style: circle; /*disc, circle, square , none, lower-alpha, upper-alpha*/
+
+}
+
+/* PSEUDO(FAKE OR ABSTRACT) PROPERTIES */
+
+.title:hover{
+    color: blue;
+}
+
+.list li:first-child{
+    color: orange;
+}
+
+.list li:last-child{
+    color: green;
+}
+
+.list li:nth-child(even)
+{
+    color: teal;
+}
+.list li:nth-child(odd)
+{
+    color: red;
+}
+
+input{
+    background-color: lightblue;
+}
+
+input:disabled{
+    color:grey;
+}
+
+
+.units{
+    color: teal;
+    font-size: 50px;
+}
+
+
+.unit-box{
+    font-size: 1rem; /*relative to root font size*/
+    font-size: 2em; /*relative to parent's font size: */
+}
+
+
+.box-units{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,255,0);
+}
+
+/*  Overflow properties: */
+
+.overflow-box{
+    border: 3px solid black;
+    height: 100px;
+    width: 50%;
+    overflow-x:scroll;
+
+    overflow: auto; 
+}
+
+
+
+
+
+
+
+
+
+
+

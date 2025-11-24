@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            transform: translate(100px, 200px) rotate(45deg) scale(0.8) skew(15deg);
+        } */
+
+        h3{
+            transform: translate(100px,200px) skew(15deg);
+        }
+
+        .animation-box{
+            height: 180px;
+            width: 180px;
+            background: rgb(0,255,0);
+            transform:translate(300px, 280px);
+            animation: my-animation 5s infinite ease-in;
+        }
+
+        @keyframes my-animation {
+            0%{
+              
+                transform: translate(300px) rotate(0);
+            }
+            25%{
+                transform: translate(500px);
+            }
+
+
+            50%{
+                background-color: aquamarine;
+                transform: translate(500px) rotate(90deg);
+            }
+
+            75%{
+                transform: translate(500px) scale(1.5);
+            }
+
+            100%{
+               
+                transform: translate(300px) rotate(180deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+
+    <h3>Hello world!</h3>
+
+    <hr>
+
+    <div class="animation-box">
+
+    </div>
+    
+</body>
+</html>
