@@ -225,6 +225,106 @@ animation: animation-name 5s ease-in-out infinite;
 
 - Just in time(JIT) compiler for faster builds.
 
+# Properties: 
+
+1. color:
+Syntax: text-{color}-{shade}
+2. Background color:
+Syntax: bg-{color}-{shade}
+
+3. text-size:
+Syntax: text-xs, sm, md, lg, xl, 2xl, 3xl, 4xl ... 9xl
+
+4. text-decoration:
+Syntax: text-underline, overline, line-through, no-underline 
+
+5. text-align:
+Syntax: text-center, left, right, justify
+
+6. text-weight:
+Syntax: text-light, medium, semibold, bold, black
+
+7. Back-ground Gradient:
+Syntax: bg-{color}-{direction}-from-{color}-{shade}-to-{color}-{shade}
+
+8. Letter spacing:
+Syntax: tracking-tight, tracking-normal, tracking-wide
+
+9. Text spacing: margin and padding: 
+Syntax: margin(m), padding(p), top(t), bottom(b), right(r), left(l), margin left-right(mx),
+        margin top-bottom(my), horizontal(x), vertical(y)
+
+Range of text-spacing value: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 18, 20
+
+10. overflow: 
+Syntax: overflow-hidden, auto, scroll, fixed
+
+11. position: static, relative, absolute, fixed , sticky
+Syntax: <div class="relative top-30 left-20 w-18 h-20 bg-red-400">
+
+12. Display: block, inline, inline-block, flex, grid, none(hidden)
+- For tailwind CSS , align-items(items) and justify-contents(justify) in flex
+Syntax(flex): <div class="m-10 flex items-10 justify-between">
+
+- For tailwind CSS, align-items(items) and justify-contents(justify-items) in grid
+Syntax: <div class="m-10 grid grid-cols-3 gap-5">
+
+13. Border: 
+Syntax: border | border-3 | border-red-300
+
+14. For setting custom value: we can use bg-[#f5f5f4] , w[20px]
+
+15. Responsive design; use sm, md, lg, xl for displaying contents in each screen size.
+- Examples: <div class="m-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+
+
+# Dark mode: 
+- For dark mode, we can simply use dark: {properties} or for configuration:
+
+**DarkMode Configuration**
+
+tailwind.config = {
+    darkMode: "class",
+};
+
+
+# Declaring variables in Tailwind CSS: 
+
+**Syntax**
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#452345",
+                    secondary: "#f5f543"
+                }
+            }
+        }
+    };
+    </script>
+
+
+# Transform properties(Tailwind CSS): 
+
+**Syntax**
+
+<div class="m-10 border-2">
+
+<div class="w-52 h-52 bg-primary text-secondary translate-x-12 rotate-12 scale-150 skew-x-12"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
  
 
 

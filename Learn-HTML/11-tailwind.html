@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+            --your-color: rgb(255,0,0);
+        }
+
+        h3{
+            color: var(--your-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Color: text-{color}-{shade}; -->
+    <!-- Background: bg-{color}-shade  -->
+    <h1 class="text-green-700 bg-green-100">Hello Tailwind!</h1>
+
+    <!-- Background-gradient: bg-gradient-<direction> from-{color}-{shade} to-{color}-{shade}  -->
+
+        <h2 class="bg-gradient-to-r from-gray-500 to-red-600 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sit ducimus, dolor maxime nulla maiores perferendis repudiandae excepturi! Perferendis distinctio, laudantium eveniet nostrum magnam porro enim eaque. Earum, deleniti incidunt!</h2>
+
+
+        <!-- Typography  -->
+         <!-- Font size: xs, sm, md, lg, xl, 2xl, 3xl, 4xl ... 9xl  -->
+
+         <!-- Font Weight: light, medium, semibold, bold, black -->
+
+         <!-- Text alignment: left, right, center, justify  -->
+
+         <!-- Text-decoration: underline, overline, line-through, no-underline -->
+
+         <!-- letter-spacing: tracking-tight, tracking-normal, tracking-wide  -->
+
+         <p class="text-2xl font-semibold text-center">Hello World!</p>
+
+         <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus mollitia quo asperiores pariatur rem saepe id impedit adipisci vel quidem reiciendis ratione, laboriosam ea accusantium delectus suscipit facilis? Nihil veniam, architecto enim quod eius corrupti, molestias blanditiis perspiciatis ex aut tempore quibusdam. Incidunt fuga, delectus officiis saepe, voluptate a non adipisci facilis neque tempora, numquam cumque corporis sequi dicta corrupti aliquam optio nulla nobis. Asperiores id officiis iure officia quidem!</p>
+
+         <h1 class="underline">Hello nimeshh !!</h1>
+
+         <h3>My color: </h3>
+
+         <!-- Spacing: margin and padding -->
+          <!-- margin: m
+            padding: p  
+             top: t  
+             bottom: b 
+             right: r
+             horizontal:x()
+             vertical: y 
+             margin left-right: mx -->
+
+            <h2 class="text-blue-700 bg-red-200 pb-8 mx-5 ">Hello project: </h2>
+
+            <!-- Height: h and width: w  -->
+
+            <div class="text-white-700 bg-orange-700 h-screen  w-1/3">box</div>
+
+            <!-- Border: border  -->
+             <!-- Border radius: rounded  -->
+
+            <div class="m-10 border border-red-700 border-2 border-dashed rounded-2xl">box2</div>
+
+            <!-- Display: flex, block, inline, inline-block, none(hidden)  -->
+             <!-- Flex: align-items(items), justify-elements(justify) -->
+
+            <div class="m-10 flex items-center justify-around ">
+                <div class="bg-red-500 h-10">BOX1</div>
+                <div class="bg-green-500 h-20">BOX2</div>
+            </div>
+
+            <!-- Grid:  -->
+
+            <div class="grid grid-cols-1 gap-3 justify-items-center">
+
+                <div class="bg-red-400 h-16 w-16 border-black-400 rounded shadow-2xl shadow-red-500">box</div>
+                <div class="bg-green-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-blue-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-orange-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-purple-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-lime-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-teal-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-cyan-400 h-16 w-16 border-black-400">box</div>
+                <div class="bg-pink-400 h-16 w-16 border-black-400">box </div>
+            </div>
+
+
+            <!-- Position: static, relative, absolute, fixed, sticky  -->
+
+            <div class="relative top-10 bottom-10 h-12 w-12 bg-red-500"></div>
+            <div class="absolute top-0 bottom-16 h-16 w-16 bg-teal-500"></div>
+            <div class="fixed top-20 left-16 h-16 w-12 bg-blue-500"></div>
+            <div class="sticky top-0 left-16 h-16 w-full bg-orange-500 opacity-50"></div>
+
+            <div class="h-screen w-full">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum et facere a necessitatibus quos incidunt eius odio voluptatibus aliquid explicabo assumenda ratione accusamus dignissimos repellat aperiam odit animi molestiae, soluta distinctio quis quibusdam nulla. Voluptatem, porro, odio officia qui, fugit sapiente dolorum recusandae doloremque laboriosam magni ducimus? Cumque dolores laboriosam odio aperiam quo. Illo sed reiciendis error exercitationem repudiandae nobis inventore nihil quod. Incidunt recusandae eligendi consectetur deserunt autem est expedita eos esse provident. Rem hic dolorum corrupti voluptatibus quibusdam nihil nostrum velit. Error ut, adipisci alias, mollitia totam </div>
+
+            <!-- Overflow -->
+            <div class="h-50 w-1/2 border Overflow-scroll ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur debitis officia nam, mollitia fuga iure commodi cum. Cum, sapiente quisquam. Distinctio quibusdam omnis asperiores quod, temporibus assumenda dicta libero voluptatem qui quisquam blanditiis voluptas sequi ea enim eaque quo sapiente. Impedit, dolorem! Recusandae vel esse earum nesciunt fugiat perferendis debitis odio ab delectus, consequuntur inventore cumque.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur debitis officia nam, mollitia fuga iure commodi cum. Cum, sapiente quisquam. Distinctio quibusdam omnis asperiores quod, temporibus assumenda dicta libero voluptatem qui quisquam blanditiis voluptas sequi ea enim eaque quo sapiente. Impedit, dolorem! Recusandae vel esse earum nesciunt fugiat perf</div>
+
+
+            <hr>
+
+            <!-- PseudoCode -->
+
+            <button class="m-10 w-20 h-12 bg-blue-500 border-white-400 rounded-xl hover:bg-blue-400 hover:underline hover:border-black-400 hover:shadow-blue-3xl focus: border-red-400 disabled">Button</button>
+
+            <!-- Custom value[]  -->
+             <button class="w-[100px] h-[50px] bg-[#123455] border rounded-xl">Click me</button>
+
+             <hr>
+
+             <!-- Responsive design: sm , md, lg, xl  -->
+              <div class="m-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                <div class="w-[150px] h-[150px] bg-red-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-green-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-blue-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-orange-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-cyan-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-teal-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-teal-500 border-3 rounded-xl"></div>
+                <div class="w-[150px] h-[150px] bg-teal-500 border-3 rounded-xl"></div>
+              </div>
+
+
+
+
+  
+     
+
+</body>
+</html>
