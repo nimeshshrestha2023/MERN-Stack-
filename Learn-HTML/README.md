@@ -251,8 +251,8 @@ Syntax: bg-{color}-{direction}-from-{color}-{shade}-to-{color}-{shade}
 Syntax: tracking-tight, tracking-normal, tracking-wide
 
 9. Text spacing: margin and padding: 
-Syntax: margin(m), padding(p), top(t), bottom(b), right(r), left(l), margin left-right(mx),
-        margin top-bottom(my), horizontal(x), vertical(y)
+***Syntax: margin(m), padding(p), top(t), bottom(b), right(r), left(l), margin left-right(mx),
+        margin top-bottom(my), horizontal(x), vertical(y)***g
 
 Range of text-spacing value: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 18, 20
 
@@ -260,14 +260,14 @@ Range of text-spacing value: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 18, 20
 Syntax: overflow-hidden, auto, scroll, fixed
 
 11. position: static, relative, absolute, fixed , sticky
-Syntax: <div class="relative top-30 left-20 w-18 h-20 bg-red-400">
+***Syntax: <div class="relative top-30 left-20 w-18 h-20 bg-red-400">***
 
 12. Display: block, inline, inline-block, flex, grid, none(hidden)
 - For tailwind CSS , align-items(items) and justify-contents(justify) in flex
-Syntax(flex): <div class="m-10 flex items-10 justify-between">
+***Syntax(flex): <div class="m-10 flex items-10 justify-between">***
 
 - For tailwind CSS, align-items(items) and justify-contents(justify-items) in grid
-Syntax: <div class="m-10 grid grid-cols-3 gap-5">
+***Syntax: <div class="m-10 grid grid-cols-3 gap-5">***
 
 13. Border: 
 Syntax: border | border-3 | border-red-300
@@ -314,6 +314,5 @@ tailwind.config = {
 <div class="m-10 border-2">
 <div class="w-52 h-52 bg-primary text-secondary translate-x-12 rotate-12 scale-150 skew-x-12"></div>
 </div>
-
 
 
