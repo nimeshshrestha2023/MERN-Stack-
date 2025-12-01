@@ -312,44 +312,8 @@ tailwind.config = {
 **Syntax**
 
 <div class="m-10 border-2">
-
 <div class="w-52 h-52 bg-primary text-secondary translate-x-12 rotate-12 scale-150 skew-x-12"></div>
-
 </div>
 
 
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
