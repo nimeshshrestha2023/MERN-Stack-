@@ -3,47 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="script.js">
+    <title>Design Website</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(173, 209, 244);
+        }
+        .container-main{
+            margin-inline: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+    
+        }
+
+        .notice-board{
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+            background-color: rgb(135, 154, 173);
+            color: aliceblue;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        .multimedia-flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .multimedia-style{
+            width: 50%;
+            height: auto;
+            margin-inline: auto;
+            border: 2px solid black;
+            margin-top: 40px;
+        
+        }
+
+        video{
+            width: 300px;
+            height: 300px;
+        }
+
+        section h2{
+            text-align: center;
+            padding-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline dashed;
+            color: rgb(102, 112, 123);
+        }
+        .nav-list{
+            text-decoration: none;
+            color: rgb(83, 94, 106);
+            font-size: 15px;
+            padding-right: 10px;
+        }
+
+        .nav-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid black;
+            
+        }
+
+        .iframe-mp4{
+            width: 50%;
+            height: auto;
+            margin-inline: auto;
+            padding: 10px;  
+        }
+
+
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container-main">
+            <div class="notice-board">
+                Notice
+            </div>
+                <div class="nav-container"> <!--flex-->
+                    <h2>Nimesh's Portfolio</h2>   
+                
+                <nav>
+                    <a href="#" class="nav-list">Home</a>
+                    <a href="#" class="nav-list">About</a>
+                    <a href="#" class="nav-list">blogs</a>
+                    <a href="#" class="nav-list">Contact</a>
+                </nav>
+                </div>
+        </div>
+    </header>
+<section class="multimedia-style">
+    <h2>My Video Source: </h2>
+    <div class="multimedia-flex">
+    <video width="320" height="240" controls>
+        <source src="/assets/video (3).mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
 
-    <h1>Learning JS: </h1>
+    <video width="320" height="240" controls>
+        <source src="/assets/video (3).mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
 
-    <input type="text" x-webkit-speech>
+    </div>
 
-    <input type="file" capture="user" accept="image/*">
+</section>
+<div class="iframe-mp4">
+    <h2 style="text-align: center;">Argentina on Top!</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w-253j0BjLk?si=xYP5CfGofNsorSGC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <script>
-        function square(value){
-            console.log("value: ",value*value);
-        }
-
-        square(55);
-
-
-        function returnMultiple(a,b)
-        {
-            const sum = a + b;
-            const multiple = a * b;
-
-            return [sum, multiple];
-        }
-
-        const result = returnMultiple(10,10);
-        console.log(result);
-
-        const name = "Nimesh Shrestha";
-const age = 20;
-
-
-const result1 = "My name is "+name+" and age is "+age;
-
-console.log(result1);
-
-
-    </script>
+    </iframe>
+    </div>
 
 </body>
-
 </html>
